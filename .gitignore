@@ -1,0 +1,39 @@
+# build output
+dist
+!.github/actions/*/dist
+target
+
+# dependencies
+node_modules
+package-lock.json
+yarn.lock
+!/yarn.lock
+test/node_modules
+.pnpm-store/
+.github/**/node_modules
+.pnp.cjs
+.pnp.loader.mjs
+
+# logs & pids
+*.log
+pids
+*.cpuprofile
+*.heapsnapshot
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out*
+test/**/next-env.d.ts
+.DS_Store
+/e2e-tests
+test/tmp/**
+test/.trace
+test/traces
+
+# Editors
+**/.idea
+**/.#*
+.nvmrc
