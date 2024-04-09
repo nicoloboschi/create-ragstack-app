@@ -21,7 +21,6 @@
   "scripts": {
     "build": "tsc -p .",
     "start": "yarn run build && node dist/index.js"
-    
   },
   "devDependencies": {
     "@types/async-retry": "1.4.8",
